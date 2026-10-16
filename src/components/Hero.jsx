@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { SiLeetcode } from 'react-icons/si'
 import { Download, Mail } from 'lucide-react'
-import hero from '../assets/hero.jpgcd'
-import cvPdf from '../assets/cv.pdf' // Make sure cv.pdf is placed in your src/assets folder
+import hero from '../assets/hero.jpg'
+import resumePdf from '../assets/resume.pdf' // Make sure cv.pdf is placed in your src/assets folder
 
 const Hero = () => {
     const roles = ['Full Stack Developer', 'Frontend Developer', 'UI/UX Enthusiast']
@@ -99,7 +99,7 @@ const Hero = () => {
                             {/* Download CV & Hire Me Buttons */}
                             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mb-8">
                                 <a
-                                    href={cvPdf}
+                                    href={resumePdf}
                                     download="Krrish_CV.pdf"
                                     className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-white font-semibold bg-red-600 hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-[0_0_30px_rgba(220,38,38,0.6)] transform hover:scale-105 cursor-pointer"
                                 >

@@ -1,11 +1,10 @@
 import React, { useRef } from 'react'
 import { FolderGit2, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react'
-import hotelImg from '../assets/hotel.jpg'
-import ecommerceImg from '../assets/ecommerce.jpg'
-import notesImg from '../assets/notes-app.jpg'
+import taskImg from '../assets/task.jpg'
 import quizImg from '../assets/quiz.jpg'
 import workshopImg from '../assets/workshop.jpg'
 import portfolioImg from '../assets/portfolio.jpg'
+import studentImg from '../assets/student.jpg'
 
 const Projects = () => {
     const scrollContainerRef = useRef(null)
@@ -23,56 +22,43 @@ const Projects = () => {
 
     const projects = [
         {
-            title: 'Hotel Service Website',
-            description: 'A comprehensive hotel service and booking web application featuring room management, seamless reservations, and an intuitive user interface.',
-            tech: ['HTML', 'CSS', 'JavaScript'],
-            github: 'https://github.com/e54trr5e/Hotel-Service-Website',
-            live: '#',
-            badge: 'Featured',
-            image: hotelImg,
-        },
-        {
-            title: 'E-Commerce Website',
-            description: 'A full-featured online shopping platform complete with product catalogs, shopping cart functionality, responsive design, and smooth checkout flows.',
-            tech: ['React', 'Tailwind CSS', 'JavaScript'],
-            github: 'https://github.com/e54trr5e',
-            live: '#',
+            title: 'Student Management System',
+            description: 'A comprehensive educational portal designed to track student records, evaluate analytics, and manage backend data efficiently.',
+            tech: ['Node.js', 'Express.js', 'MongoDB', 'JavaScript', 'HTML', 'CSS'],
+            github: 'https://github.com/e54trr5e/Student-Management-System',
             badge: 'Full Stack',
-            image: ecommerceImg,
+            image: studentImg,
         },
-        {
-            title: 'Notes App',
-            description: 'A sleek note-taking application that enables users to create, edit, organize, and manage daily tasks and personal notes efficiently.',
-            tech: ['JavaScript', 'HTML5', 'CSS3'],
-            github: 'https://github.com/e54trr5e/Notes-App',
-            live: '#',
-            badge: 'Frontend',
-            image: notesImg,
-        },
+
         {
             title: 'Online Quiz System',
             description: 'An interactive online testing platform designed to conduct quizzes, evaluate scores automatically, and display detailed results.',
-            tech: ['JavaScript', 'HTML', 'CSS'],
+            tech: ['Node.js', 'Express.js', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
             github: 'https://github.com/e54trr5e/Online-quiz-System',
-            live: '#',
-            badge: 'Web App',
+            badge: 'Full Stack',
             image: quizImg,
+        },
+        {
+            title: 'Task Management app', 
+            description: 'A comprehensive task management application designed to organize daily workflows, track team progress, and manage project milestones efficiently[cite: 1].', //[cite: 1]
+            tech: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
+            github: 'https://github.com/username/TaskFlow-Pro',
+            badge: 'Full Stack', 
+            image: taskImg, 
         },
         {
             title: 'Smart Mechanical Workshop',
             description: 'A service workshop web application for scheduling mechanical repairs, managing equipment service records, and streamlining operations.',
             tech: ['JavaScript', 'HTML5', 'CSS3'],
             github: 'https://github.com/e54trr5e/Smart-Mechanical-Workshop',
-            live: '#',
             badge: 'Featured',
             image: workshopImg,
         },
         {
             title: 'Portfolio Website',
             description: 'A modern, fully responsive developer portfolio featuring dark mode support, glassmorphism card styling, interactive components, and smooth animations.',
-            tech: ['React', 'Tailwind CSS', 'Lucide React'],
-            github: 'https://github.com/e54trr5e',
-            live: '#',
+            tech: ['React', 'Tailwind CSS', 'Javascript', 'HTML5', 'CSS3'],
+            github: 'https://github.com/e54trr5e/Portfolio',
             badge: 'Frontend',
             image: portfolioImg,
         },
@@ -177,15 +163,7 @@ const Projects = () => {
                                     <FolderGit2 size={16} />
                                     Code
                                 </a>
-                                <a
-                                    href={project.live}
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                    className='inline-flex items-center gap-1.5 text-sm font-medium text-red-600 dark:text-red-400 hover:underline ml-auto transition-all'
-                                >
-                                    Live Demo
-                                    <ExternalLink size={15} />
-                                </a>
+
                             </div>
                         </div>
                     ))}
