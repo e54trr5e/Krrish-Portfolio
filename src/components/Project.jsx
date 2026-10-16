@@ -58,7 +58,7 @@ const Projects = () => {
             title: 'Portfolio Website',
             description: 'A modern, fully responsive developer portfolio featuring dark mode support, glassmorphism card styling, interactive components, and smooth animations.',
             tech: ['React', 'Tailwind CSS', 'Javascript', 'HTML5', 'CSS3'],
-            github: 'https://github.com/e54trr5e/Portfolio',
+            github: 'https://github.com/e54trr5e/Krrish-Portfolio',
             badge: 'Frontend',
             image: portfolioImg,
         },

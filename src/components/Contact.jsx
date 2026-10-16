@@ -23,7 +23,7 @@ const Contact = () => {
         {
             icon: Mail,
             title: 'Email Me',
-            value: 'your.email@example.com',
+            value: 'krrishinghchd1@gmail.com',
             link: 'mailto:krrishsinghchd1@gmail.com',
         },
         {
