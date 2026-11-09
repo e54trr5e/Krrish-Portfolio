@@ -41,7 +41,7 @@ const Projects = () => {
             title: 'Task Management app', 
             description: 'A comprehensive task management application designed to organize daily workflows, track team progress, and manage project milestones efficiently[cite: 1].', //[cite: 1]
             tech: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
-            github: 'https://github.com/username/TaskFlow-Pro',
+            github: 'https://github.com/e54trr5e/Task-Management-App',
             badge: 'Full Stack', 
             image: taskImg, 
         },
