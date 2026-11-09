@@ -2,7 +2,6 @@ import React, { useRef } from 'react'
 import { FolderGit2, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react'
 import taskImg from '../assets/task.jpg'
 import quizImg from '../assets/quiz.jpg'
-import workshopImg from '../assets/workshop.jpg'
 import portfolioImg from '../assets/portfolio.jpg'
 import studentImg from '../assets/student.jpg'
 
@@ -45,14 +44,6 @@ const Projects = () => {
             github: 'https://github.com/username/TaskFlow-Pro',
             badge: 'Full Stack', 
             image: taskImg, 
-        },
-        {
-            title: 'Smart Mechanical Workshop',
-            description: 'A service workshop web application for scheduling mechanical repairs, managing equipment service records, and streamlining operations.',
-            tech: ['JavaScript', 'HTML5', 'CSS3'],
-            github: 'https://github.com/e54trr5e/Smart-Mechanical-Workshop',
-            badge: 'Featured',
-            image: workshopImg,
         },
         {
             title: 'Portfolio Website',
